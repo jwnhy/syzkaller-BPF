@@ -1,0 +1,37 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-c",
+      "-m64",
+      "-O2",
+      "-pthread",
+      "-Wall",
+      "-Werror",
+      "-Wparentheses",
+      "-Wunused-const-variable",
+      "-Wframe-larger-than=16384",
+      "-Wno-stringop-overflow",
+      "-Wno-array-bounds",
+      "-Wno-format-overflow",
+      "-Wno-unused-but-set-variable",
+      "-Wno-unused-command-line-argument",
+      "-std=c++14",
+      "-I.",
+      "-Iexecutor/_include",
+      "-DGOOS_linux=1",
+      "-DGOARCH_amd64=1",
+      "-DHOSTGOOS_linux=1",
+      "-DSYZ_EXECUTOR_USES_FORK_SERVER=1",
+      "-DSYZ_EXECUTOR_USES_SHMEM=1",
+      "-DSYZ_EXECUTOR=1",
+      "-DGIT_REVISION=\"beba84aaeebd0e4c43482c1f6256de6e48218141\"",
+      "-o",
+      "./bin/linux_amd64/syz-executor",
+      "executor/executor.cc"
+    ],
+    "directory": "/home/john/documents/kfuzz/syzkaller-BPF",
+    "file": "/home/john/documents/kfuzz/syzkaller-BPF/executor/executor.cc",
+    "output": "/home/john/documents/kfuzz/syzkaller-BPF/bin/linux_amd64/syz-executor"
+  }
+]
